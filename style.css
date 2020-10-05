@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    background-color: #f3f3f3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    height: 80vh;
+}
+
+.container {
+    border-radius: 2px;
+    box-shadow: 1px 1px 3px rgb(197, 197, 197);
+    background-color: #ffffff;
+    z-index: 11;
+    max-width: 500px;
+    display: flex;
+    height: 55vh;
+    flex-direction: column;
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show-nav {
+    transition: all 1.5s ease-in-out;
+    transform: translateZ(0)!important;
+}
+
+#logo {
+    width: 50px;
+    margin-left: .5rem;
+}
+#btn-x {
+    position: relative;
+    right: -450px;
+    top: -45px;
+    margin: 0;
+    border: none;
+    outline: none;
+}
+#close-btn {
+    width: 30px;
+    cursor: pointer;
+}
+
+.logo-x {
+    margin: 0;
+    padding: 0;
+    display: inline;
+
+}
+
+
+.nav-bar {
+    margin-top: -2.5rem;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+}
+.list-item {
+    height: 30vh;
+    list-style: none;
+    padding-left: .5rem;
+    margin-bottom: 0;
+    margin-bottom: 0;
+}
+a {
+    color: slateblue;
+    display:block;
+    padding: .3rem;
+    font-size: 18px;
+    letter-spacing: .5px;
+    text-decoration: none;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    transition: all .3s ease-out;
+}
+
+a:hover{
+    background-color: rgba(105, 90, 205, 0.158);
+    font-size: 20px;
+    font-weight: 600;
+    transform: translateX(-2px);
+}
+
+.btn-bar {
+    z-index: 0;
+    border: none; 
+    position: fixed;
+    font-size: 25px;
+    color: slateblue;
+    right: 15px;
+    top: 15px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* icons */
+.icons {
+    margin-top: 5rem;
+    font-size: 20px;
+    text-align: center;
+    color: slateblue;
+}
+.fab {
+    padding-left: .5rem;
+}
+.fab:hover {
+    color: rgba(105, 90, 205, 0.747);
+    font-size: 22px;
+    cursor: pointer;
+}
